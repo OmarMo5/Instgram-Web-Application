@@ -1,0 +1,125 @@
+﻿.navbar{background-color:#6d1f1f;}
+.container .navbar-header div ul {margin-left:800px;}
+.container .navbar-header div ul li{display:inline-block;margin-top:12px;}
+.container .navbar-header div ul li input{
+    width:100px;font-size:20px;color:black;margin-left:15px; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.main{margin-top:5%;margin-bottom:15px;}
+.main #large-feed {
+    margin: 0px 60px;
+    background-color: white;
+    min-height: 60px;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+}
+.main #large-feed img {
+    width: 400px;height: 300px;margin-left:80px;
+    border-radius: 10px;margin-bottom: 30px;
+}
+.main #mian_right {margin-top: 25px;display: flex;}
+.main #mian_right img {
+margin-left: 32%;height: 500px;width: 500px;
+}
+.main #mian_right p {
+width: 400px;font-family: arial;font-size: 40px;
+font-variant: small-caps;text-shadow: 1px 1px;
+margin-left: 90px;line-height: 60px;margin-top: 45px;
+}
+.main #mian_right p span {
+    color: #9810dd;display: block;text-transform: capitalize;
+}
+.main .middel {display: flex;flex-direction: row;}
+.main .middel .left {
+margin: 150px 0px 0px 250px;width: 400px;
+}
+.main .middel .left h1 {
+    font-size: 15px;
+    font-style: oblique;
+}
+.main .middel .left p {font-size: 40px;}
+.main .middel .left button {
+    border: 2px solid #9810dd;
+    border-radius: 25px;padding: 15px;
+    background-color: white;
+    font-size: 15px;width: 150px;
+}
+.main .middel .left button:hover {
+    background-image: linear-gradient(#790d95,#a12792,#dd1140);
+    cursor: pointer;
+}
+.main .middel .right video {
+margin-left: 260px;
+margin-top: 90px;
+margin-bottom: 50px;
+width: 500px;
+height: 550px;
+background-image: linear-gradient(#790d95,#a12792,#dd1140);
+}
+.main .end {display: flex;flex-direction: row;}
+.main .end .right img {
+width: 300px;height: 600px;margin-left: 250px;margin-top: 60px;
+border-radius: 15px;
+}
+.main .end .left {margin: 150px;}
+.main .end .left h1 {font-size: 15px; font-style: oblique;}
+.main .end .left p {font-size: 40px;margin-top: 25px;}
+.main .end .left button {
+    border: 2px solid #9810dd;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: white;
+    font-size: 15px;
+    width: 200px;
+    margin-top: 50px;
+}
+.main .end .left button:hover {
+    background-image: linear-gradient(#790d95,#a12792,#dd1140);
+    cursor: pointer;
+}
+.main .end1 {display: flex;flex-direction: row;}
+.main .end1 .right img {
+width: 300px;height: 600px;margin-left: 250px;
+margin-top: 60px;border-radius: 15px;
+}
+.main .end1 .left {margin: 130px;}
+.main .end1 .left h1 {font-size: 15px;font-style: oblique;}
+.main .end1 .left p {font-size: 40px;}
+.main .end1 .left button {
+    border: 2px solid #9810dd;border-radius: 25px;
+    padding: 15px;background-color: white;
+    font-size: 15px;width: 150px;margin-top: 50px;
+}
+.main .end1 .left button:hover {
+    background-image: linear-gradient(#790d95,#a12792,#dd1140);
+    cursor: pointer;
+}
+
+
+.footer {
+    color: black;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 1px solid rgba(0,0,0,.0975);
+    padding: 10px;
+    min-height: 60px;
+    font-size: 25px;
+}
+.footer .center{text-align:center;margin-bottom:50px;}
+.footer .center .h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom:30px;font-size:45px;
+}
+.footer .center button{color:dimgrey;}
+
+.footer .middel1{margin:50px 0px;}
+.footer .middel1 .container  p>*{
+    color:black;font-size:18px;color:gray;
+}
+.footer .middel1 .container  h5>*{
+    color:black;font-size:20px;
+}
+
+.footer .info{text-align:right;margin-right:80px;}
+.footer select {
+    border: none;margin-top:10px;
+}

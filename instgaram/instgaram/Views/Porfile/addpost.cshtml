@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "create new post . Instgram";
+}
+
+<link href="~/Content/StyleAddPost.css" rel="stylesheet" />
+
+<h1>Create New Post</h1>
+<form method="post" action="/Porfile/addpost" enctype="multipart/form-data">
+    <label>Upload Photo</label>
+    <input type="file" name="photo" class="btn btn-danger" />
+    <input type="submit" value="send" class="btn btn-primary" />
+</form>

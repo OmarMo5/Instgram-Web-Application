@@ -1,0 +1,46 @@
+﻿@model IList<instgaram.Models.User>
+
+@{
+    ViewBag.Title = "Suggestions For You";
+}
+
+<!--<link href="~/Content/StyleAllPerson.css" rel="stylesheet" />-->
+
+<section>
+
+    <!--<form method="post" action="/porfile/getpersons">
+        <label>name</label>
+        <input type="search" name="name" />
+        <br />
+        <input type="submit" value="send" class="btn btn-info btn-block" />
+    </form>-->
+
+    <div class="t">
+        <div class="row">
+            <div class="container">
+                <h2 style="margin:10% 0px 40px 10%">Suggested</h2>
+                @{
+                    foreach (var item in Model)
+                    {
+                        <div class="col-md-9 col-md-offset-1">
+                            <img src="@item.Photo"
+                                 style="width:50px;height:60px;border:2px solid gray;
+                                        border-radius:50%;cursor:pointer;" />
+                            <span style="font-size:20px;font-style:italic;cursor:pointer;">
+                                @item.FName @item.LName
+                            </span>
+                            <button style="float:right;"
+                                    class="btn btn-primary">
+                                <a href="/Porfile/addfriend/@item.Id" 
+                                   style="color:white;font-size:20px;text-decoration:none;">
+                                    Follow
+                                </a>
+                            </button>
+                            <hr style="margin-bottom:10%;"/>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</section>

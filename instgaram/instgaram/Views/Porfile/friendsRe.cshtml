@@ -1,0 +1,60 @@
+﻿@model IList<instgaram.Models.friend_re>
+
+@{
+    ViewBag.Title = "MyFriends";
+}
+
+<link href="~/Content/StyleFriendReq.css" rel="stylesheet" />
+
+<div class="can">
+    <h4>Followers</h4>
+    @{
+        foreach (var item in Model)
+        {
+        <div class="sperat">
+            <img src="@item.resever.Photo" />
+            <span>@item.resever.FName @item.resever.LName</span>
+            <button class="btn btn-default" id="btn">
+                <a href="/porfile/cancle/@item.resever.Id" class="fir">Remove</a>
+            </button>
+        </div>
+        }
+    }
+</div>
+
+
+@*@model instgaram.Models.friend_re
+
+    @{
+        ViewBag.Title = "friendsRe";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+    <h2>friendsRe</h2>
+
+    <div>
+        <h4>friend_re</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.sender1_id)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.sender1_id)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.resever1_id)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.resever1_id)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>*@

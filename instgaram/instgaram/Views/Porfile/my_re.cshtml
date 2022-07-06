@@ -1,0 +1,25 @@
+﻿@model IList<instgaram.Models.friend_re>
+
+@{
+    ViewBag.Title = "Your Requests";
+}
+
+<link href="~/Content/StyleForMy_Re.css" rel="stylesheet" />
+
+<div class="can">
+    @{
+        foreach (var item in Model)
+        {
+        <div class="sperat">
+            <img src="@item.resever.Photo" />
+            <span>@item.resever.FName @item.resever.LName</span>
+            <button class="btn btn-default" id="btn">
+                <a href="/porfile/cancle/@item.resever.Id" class="fir">Cancle</a>
+            </button>
+            <button class="btn btn-primary">
+                <a href="/porfile/myFreinds/@item.resever.Id" class="sec">Accept</a>
+            </button>
+        </div>
+        }
+    }
+</div>

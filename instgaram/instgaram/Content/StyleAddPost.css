@@ -1,0 +1,15 @@
+﻿h1{margin-left:35%;font-weight:bolder;margin-top:60px;}
+form{
+    margin-left:30%;background:gray;width:500px;height:400px;
+    padding:15px;border-radius:10px;
+}
+form label {
+    font-family: Algerian;
+    font-size: 25px;margin-left:30%;
+    margin-top:60px;
+    font-style: initial;
+    color: #062b3b;
+}
+form input{margin-top:30px;}
+form input[type="file"]{display:block;margin-left:18%;}
+form input[type="submit"]{margin-left:33%;width:150px;font-size:20px;}

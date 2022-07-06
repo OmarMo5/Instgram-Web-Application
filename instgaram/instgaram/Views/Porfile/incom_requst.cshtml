@@ -1,0 +1,102 @@
+﻿@model IList<instgaram.Models.friend_re>
+
+@{
+    ViewBag.Title = "Edit Profile . Instgram";
+}
+
+<link href="~/Content/Style_IncomReq.css" rel="stylesheet" />
+
+<div class="windowToEdit">
+    <div class="row">
+        <div class="container">
+            <div class="col-md-4 left">
+                <p>Edit Profile</p>
+                <p>Change Password</p>
+                <p>Apps And Websites</p>
+                <p>Email Notification</p>
+                <p>Push Notifications</p>
+                <p>Manage Contacts</p>
+                <p>Login Avtivity</p>
+                <p>Privacy And Security</p>
+                <p>Emails From Instgram</p>
+                <p>Help</p>
+                <a href="#">Switch To Professional</a>
+                <a href="#" class="endLink">Account</a>
+                <h5 class="hFirst">
+                    <img src="~/images/meta.JPEG" />
+                    meta
+                </h5>
+                <h5>
+                    Control settings for connected experiences across Instagram, the Facebook app and Messenger, 
+                    including story and post sharing and logging in
+                </h5>
+
+            </div>
+
+            <div class="col-md-6 col-lg-offset-1 right">
+                @*<img src="@Model.Photo" />
+                <span>@Model.FName @Model.FName</span>*@
+                <table>
+                    <tr>
+                        <td><label>Old Password</label></td>
+                        <td><input type="password" name="password" class="input-lg" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label>New Password</label></td>
+                        <td><input type="password" name="password" class="input-lg" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label>Confirm New Password</label></td>
+                        <td><input type="password" name="password" class="input-lg" required /></td>
+                    </tr>
+                </table>
+                <div class="down">
+                    <button class="btn btn-primary">Change PassWors</button>
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <div class="right1">
+                    <h3>Apps and Websites</h3>
+                    <span>Active</span>
+                    <span class="first">Expired</span>
+                    <span class="first">Removed</span>
+                    <p class="pFirst">
+                        These are apps and websites you've connected to your Instagram account. 
+                        They can access non-public information that you choose to share with them.
+                    </p>
+                    <p>You have not authorized any applications to access your Instagram account.</p>
+                </div>
+
+                <div class="right2">
+                    <h2>Subscribe to:</h2>
+                    <input type="checkbox" name="sub" /><label>FeedBack emails</label>
+                    <p>Give feedback on Instagram.</p>
+                    <input type="checkbox" name="sub" /><label>Reminder emails</label>
+                    <p>Get notifications you may have missed.</p>
+                    <input type="checkbox" name="sub" /><label>Product emails</label>
+                    <p>Get tips about Instagram's tools.</p>
+                    <input type="checkbox" name="sub" /><label>News emails</label>
+                    <p>Learn about new Instagram features.</p>
+                </div>
+
+                <div class="right3">
+                    <h2>Manage contacts</h2>
+                    <p>
+                        The people listed here are contacts you've uploaded to Instagram. To remove your synced contacts,
+                        tap Delete All. Your contacts will be re-uploaded the next time Instagram syncs your contacts 
+                        unless you go to your device settings and turn off access to contacts.
+                    </p>
+                    <p>
+                        Only you can see your contacts, but Instagram uses the info you've uploaded about your contacts 
+                        to make friend suggestions for you and others and to provide a better experience for everyone.
+                    </p>
+                    <p>When you upload your contacts to Instagram, you'll see them here.</p>
+                    <button class="btn btn-primary btn-lg">Delete All</button>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>

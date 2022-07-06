@@ -1,0 +1,22 @@
+﻿.can {
+    width: 600px;margin-top: 50px;margin-left: 30%;
+}
+.can h4{
+    margin-left:43%;font-size:25px;color:#000000;
+}
+.can .sperat{margin-bottom:45px;cursor:pointer;border-top:2px solid gray;}
+.can img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid gray;
+    border-radius: 35px;
+    margin-left:20px;
+    margin-top:20px;
+}
+.can span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;margin-left:10px;
+}
+.can button{float:right;margin-top:25px;}
+.can button a{color:#000000;text-decoration:none;}
+

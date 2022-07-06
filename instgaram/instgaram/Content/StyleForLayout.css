@@ -1,0 +1,25 @@
+﻿html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    min-height: 60px;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+}
+.banner h1 {
+    color: white;
+}
+.banner > * {
+    margin: 10px 25px;
+}

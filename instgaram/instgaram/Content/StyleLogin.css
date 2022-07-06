@@ -1,0 +1,74 @@
+﻿body{background-color:#d0d0d0;}
+form {
+    width: 500px;
+    border: 2px solid #808080;
+    border-radius: 15px;
+    margin: auto;
+    padding: 12px;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    background-color:white;
+}
+form h1{
+    text-align:center;margin-bottom:30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+form label {
+    font-size: 15px;
+    font-style: oblique;
+    margin-top: 5px;
+}
+form input[type="text"], [type="password"] {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    box-shadow: inset;
+    padding: 7px;
+    color: gray;
+    font-size: 16px;
+    font-weight: 10px;
+    width: 250px;
+    border-radius: 15px;
+    border: 2px solid #4b3a3a;
+}
+form input[type="submit"] {
+    border: 2px solid #f52424;
+    color: white;
+    margin-left:70px;
+    margin-bottom:20px;
+    cursor: pointer;
+    font-style: italic;
+    font-size: 18px;
+}
+form #logIn1 img {
+    width: 20px;
+    height: 20px;
+    margin-left:32%;
+}
+form #logIn1 p {margin:30px 35px;}
+form #logIn1 span {font-size: 15px;font-style: italic;}
+form #logIn1 h4 {
+    margin-left: 35%;
+    margin-top:20px;
+    color: black;
+    cursor: pointer;
+}
+form #logIn1 h4:hover {text-decoration: underline;}
+
+.end {margin-left: 13%;}
+.end h4{
+    margin-left:25%;
+    padding: 12px;
+    margin-bottom: 80px;
+    background-color: white;    
+    width: 510px;
+    border: 2px solid #808080;
+    border-radius: 15px;
+}
+.end h4>a,.Row a{text-decoration:none;}
+.end .Row{margin-left:20%;margin-top:20px;}
+.end .Row a{color:gray;margin-left:20px;}
+.end .info{margin-left:33%;margin-top:25px;}
+.end .info select{
+    border: none;padding:5px;border-radius:8px;
+    margin-right:20px;
+}

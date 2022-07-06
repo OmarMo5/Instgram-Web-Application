@@ -1,0 +1,33 @@
+﻿@model IList<instgaram.Models.User>
+
+@{
+    ViewBag.Title = "Get Persons";
+}
+
+<link href="~/Content/StyleGetPerson.css" rel="stylesheet" />
+
+<section>
+    <form method="post" action="/porfile/getpersons">
+        <label>name</label>
+        <input type="text" name="name" />
+        <input type="submit" value="send" class="btn btn-info" />
+    </form>
+    <h1>All Suggestation For You</h1>
+    <div class="t">
+        @{
+            foreach (var item in Model)
+            {
+            <div class="media">
+                <div class="pull-left">
+                    <img src="@item.Photo" />
+                </div>
+                <div class="media-body">
+                    <span>@item.FName @item.LName</span>
+                    <mark>Follow By You</mark>
+                </div>
+                <p>This Is My Images To My Profile, What You Want..</p>
+            </div>
+            }
+        }
+    </div>
+</section>

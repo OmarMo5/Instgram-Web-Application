@@ -1,0 +1,26 @@
+﻿.can{
+    width:600px;height:600px;margin-top:50px;overflow:scroll;
+    margin-left:30%;background-color:#eee;
+    border:2px solid #eee;border-radius:15px;padding:15px;
+}
+.can .sperat{margin-bottom:45px;}
+.can img {
+    width: 60px;
+    height: 60px;
+    border: 2px solid gray;
+    border-radius: 35px;
+    margin-left:20px;
+}
+.can span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+.can button{float:right;}
+.can #btn{margin-left:2%;}
+.can button .fir{text-decoration:none;color:black;}
+.can button .sec{text-decoration:none;color:white;}
+.can button a {
+    text-decoration:none;
+    font-size: 20px;
+    margin-bottom: 200px;
+}

@@ -1,0 +1,78 @@
+﻿.t {
+    margin: 25px 0px 40px 200px;width:600px;
+}
+.row .t .carousel{margin:30px 0;background:#a7a3a3;}
+.row .t .carousel img{
+    width:120px;height:100px;cursor:pointer;margin-left:43%;margin-bottom:10px;
+    margin-top:10px;border-radius:50%;border:2px solid #ff6a00;
+}
+.t .post {
+    padding: 30px;
+    margin-bottom: 20px;
+    border: 2px solid #808080;
+    border-radius: 15px;
+}
+.t .post .person{margin-top:10px;}
+.t .post .person img{height:40px;border-radius:50%;border:2px solid #808080;cursor:pointer;}
+.t .post .person h5 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;cursor:pointer;
+    margin-left: 20px;display:inline;
+    text-transform: capitalize;
+}
+
+.t .post center img{width:100%;height:600px;margin-top:15px;}
+.t .post center h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: unset;
+    text-transform: fullsize-kana;
+}
+.t .post .sty{border:none;padding:12px;}
+.t .post input[type="button"]{width:150px}
+.t .post center #react {
+width: 20px;
+height: 20px;
+margin-top: 15px;
+margin-left:12px;
+cursor: pointer;
+}
+.t .post center .sad {margin-left: 65px;}
+
+section .sea{position:fixed;z-index:999999;margin-top:40px}
+section .sea .person{margin-top:10px;}
+section .sea .person img{height:80px;border-radius:50%;border:2px solid #808080;cursor:pointer;}
+section .sea .person span {
+    font-style: oblique;cursor:pointer;font-size:20px;color:#000000;
+    margin-left: 20px;display:inline;
+    text-transform: capitalize;
+
+}
+section .sea .person a{text-decoration:none;margin-left:37%;font-size:17px;}
+section .sea ul {
+    background: #eee;
+}
+section .sea ul li{
+    list-style:none;font-size:20px;text-decoration:none;
+    line-height:20px;margin-top:40px;padding:8px;
+}
+section .sea form {
+width: 500px;
+margin-top:30px;
+}
+section .sea form label {
+    font-family: Aldhabi;
+    font-size: 35px;
+    font-style: initial;
+    color: brown;
+    margin-right: 30px;
+}
+section .sea form input[type="search"] {
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+}
+section .sea .footer{margin-top:70px;color:#808080}
+section .sea .footer .Row{margin-bottom:20px;}
+section .sea .footer .Row a:first-child{margin-left:0px;}
+section .sea .footer .Row a{color:#808080;text-decoration:none;margin-left:15px;}

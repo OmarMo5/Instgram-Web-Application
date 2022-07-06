@@ -1,0 +1,107 @@
+﻿@model instgaram.Models.User
+
+@{
+    ViewBag.Title = "Instgram | My Profile";
+}
+
+<link href="~/Content/StyleProfile.css" rel="stylesheet" />
+
+<section class="row">
+    <div class="col-md-4 t">
+
+        <div class="carousel slide" data-ride="carousel" id="carou">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="~/photopost/3.png" />
+                </div>
+                <div class="item">
+                    <img src="~/photopost/Man.JPEG" />
+                </div>
+                <div class="item">
+                    <img src="~/photopost/1f9cd.png" />
+                </div>
+                <div class="item">
+                    <img src="~/photopost/images.png" />
+                </div>
+            </div>
+
+            <a href="#carou" class="left carousel-control" role="button" data-slide="Prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </a>
+            <a href="#carou" class="right carousel-control" role="button" data-slide="Next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </a>
+        </div>
+
+        @{foreach (var item in Model.posts)
+            {
+                <div class="post">
+                    <div class="person">
+                        <img src="@Model.Photo" />
+                        <h5>@Model.FName @Model.LName</h5>
+                        <!--<a href="/Porfile/addpost"><h3> add post </h3> </a>
+                    <a href="/Porfile/incom_requst"><h3> Edit Profile </h3> </a>-->
+                    </div>
+
+                    <center>
+                        <img src="@item.photo" />
+                        <br />
+                        <img src="~/images/sad.jpeg" id="react" class="sad"
+                             onmouseover="Reaction1();" onmouseout="clearTimeout(x);" />
+                        <img src="~/images/haha.jpeg" id="react" />
+                        <img src="~/images/wow.jpeg" id="react" />
+                        <img src="~/images/care.jpeg" id="react" />
+                        <img src="~/images/love.jpeg" id="react" />
+                        <img src="~/images/like.jpeg" id="react" />
+                    </center>
+                    @{foreach (var i in item.Comments)
+                        {
+                            <h3>@i.commenttext</h3>
+                        }
+                    }
+                    <br />
+                    <input class="sty" type="text" placeholder="Write Your Comment" id="@item.Id" />
+                    <input type="button" class="btn btn-danger btn-lg" onclick="sendcomment('@item.Id','@Session["Userid"]')" value="send" />
+                </div>
+            }
+        }
+    </div>
+    <div class="col-md-offset-7 sea">
+        <div class="person">
+            <img src="@Model.Photo" />
+            <span>@Model.FName @Model.LName</span>
+            <a href="/Home/LogIn">Switch</a>
+        </div>
+        <ul>
+            <li> @Html.ActionLink("Suggestions For You", "allpersons", "porfile")</li>
+            <li> @Html.ActionLink("FollowRequsts", "my_re", "porfile")</li>
+            <li> @Html.ActionLink("Followers", "friendsRe", "porfile")</li>
+        </ul>
+
+        <form method="post" action="/porfile/getpersons">
+            <label>name</label>
+            <input type="search" name="name" placeholder="Search Your Friends" />
+            <br />
+            <input type="submit" value="send" class="btn btn-info btn-block" />
+        </form>
+
+        <div class="footer">
+            <div class="Row">
+                <a href="#">Meta</a>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Help</a>
+                <a href="#">Jobs</a>
+                <a href="#">ApI</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Location</a>
+                <a href="#">Instgram Lite</a>
+            </div>
+            <p>&copy; @DateTime.Now.Year - Instagram Application From Meta</p>
+        </div>
+    </div>
+</section>
+<script src="~/Scripts/Comment.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>

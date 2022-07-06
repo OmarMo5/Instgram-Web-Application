@@ -1,0 +1,78 @@
+﻿@{
+    ViewBag.Title = "Signup";
+}
+
+<link href="~/Content/StyleSignUp.css" rel="stylesheet" />
+
+<section class="bodypage">
+    <form method="post" action="/Home/Signup" enctype="multipart/form-data">
+        <h1>Instgram</h1>
+        <table>
+            <tr>
+                <div id="logIn1">
+                    <h2>Sign up to see photos and videos from your friends.</h2>
+                    <div class="form-group">
+                        <img src="~/images/face.JPEG" />
+                        <span>Log in with Facebook</span>
+                        <p>____________________________ OR _____________________________</p>
+                    </div>
+                </div>
+            </tr>
+            <tr>
+                <td> <label class="text-danger">Frist Name</label></td>
+                <td><input type="text" name="Fname" /></td>
+            </tr>
+            <tr>
+                <td><labe class="text-danger">Last Name</labe></td>
+                <td><input type="text" name="Lname" /></td>
+            </tr>
+            <tr>
+                <td><label class="text-danger">Photo</label></td>
+                <td><input type="file" name="photo" /></td>
+            </tr>
+            <tr>
+                <td><label class="text-danger">Phone</label></td>
+                <td><input type="text" name="Phone" /></td>
+            </tr>
+            <tr>
+                <td> <label class="text-danger">Username</label></td>
+                <td> <input type="text" name="username" /></td>
+            </tr>
+            <tr>
+                <td> <label class="text-danger">Password</label></td>
+                <td> <input type="password" name="password" /> </td>
+            </tr>
+            <tr>
+                <td> <label class="text-danger">Repassword</label></td>
+                <td> <input type="password" name="repassword" /></td>
+            </tr>
+        </table>
+        <input type="submit" value="Send" class="btn btn-primary" />
+        <h2 id="msg">@ViewBag.mss</h2>
+    </form>
+</section>
+
+<div class="end">
+    <h4>Have an account? <a href="/Home/LogIn">Login</a></h4>
+    <div class="Row">
+        <a href="#">Meta</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Help</a>
+        <a href="#">Jobs</a>
+        <a href="#">ApI</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Location</a>
+        <a href="#">Instgram Lite</a>
+    </div>
+    <div class="info">
+        <select name="Langauge">
+            <option>Arabic</option>
+            <option>English</option>
+            <option>Franch</option>
+            <option>Asbani</option>
+        </select>
+        <span>&copy;  2022 Instagram from Meta</span>
+    </div>
+</div>

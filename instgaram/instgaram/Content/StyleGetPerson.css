@@ -1,0 +1,39 @@
+﻿form {
+width: 500px;
+margin: 50px 1px 50px 50px;
+}
+form input[type="text"]{
+    border:2px solid #983030;border-radius:15px;
+    width:250px;padding:10px;
+}
+form input[type="submit"] {
+    border: 2px solid #0026ff;
+    border-radius: 20px;
+    padding: 8px;margin-left:25px;
+    width: 280px;
+}
+form label {
+    font-family: Aldhabi;
+    font-size: 35px;
+    font-style: initial;
+    color: brown;
+    margin-right: 30px;
+}
+h1{margin-left:30%;}
+.t {
+    margin:20px 0px 20px 23%;padding: 25px;
+}
+.t img {
+    margin-left: 100px;
+    margin-right: 20px;
+    border: 2px solid #983030;
+    border-radius: 50%;
+    width: 70px;
+    height: 60px;
+}
+.t span{font-size:20px;color:brown;font-style:oblique;display:block;}
+.t p {
+    margin:20px 100px 25px 100px;font-style: inherit;
+    font-size: 25px;color: #808080;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

@@ -1,0 +1,168 @@
+﻿@{
+    ViewBag.Title = "Instagram | About | Official Site";
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <style>
+        </style>
+        <link href="~/Content/StyleHomePage.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top" style="background:#09517a;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @{if (Session["Userid"] == "0")
+                        {
+                            @Html.ActionLink("Instgram", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                        }
+                        else
+                        {
+                            @Html.ActionLink("Instgram", "Index", "Porfile", new { area = "" }, new { @class = "navbar-brand" })
+                        }
+                    }
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="/Home/LogIn">
+                                    <input type="button" value="Login" class="btn btn-default" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/Home/Signup">
+                                    <input type="button" value="Sign up" class="btn btn-default" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class='main'>
+            <div id='large-feed'>
+                <div id="mian_left">
+                    <img src="~/images/cat.JPEG" />
+                </div>
+                <div id="mian_right">
+                    <p>
+                        Give people the power to build community and bring the world closer
+                        <span>together<span>
+                    </p>
+                    <img src="~/images/woman.JPEG" />
+                </div>
+                <div id="mian_left1">
+                    <img src="~/images/driv.JPEG" />
+                </div>
+            </div>
+
+            <div class="end">
+                <div class="right">
+                    <img src="~/images/sea.JPEG" />
+                </div>
+                <div class="left">
+                    <h1>
+                        FIND SOMETHING NEW<h1>
+                            <p>Discover content and creators based on your interests.</p>
+                            <button>Search & Exploer</button>
+                </div>
+            </div>
+
+            <div class="middel">
+                <div class="left">
+                    <h1>
+                        STAND OUT ON INSTAGRAM<h1>
+                            <p>Connect with more people, build influence, and create compelling content that's distinctly yours.</p>
+                            <button>Creator</button>
+                </div>
+                <div class="right">
+                    <video controls="controls">
+                        <source src="~/Videos/player1.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+
+            <div class="end1">
+                <div class="right">
+                    <img src="~/images/carly.JPEG" />
+                </div>
+                <div class="left">
+                    <h1>
+                        GROW WITH US<h1>
+                            <p>Share and grow your brand with our diverse, global community.</p>
+                            <button>Buissness</button>
+                </div>
+            </div>
+        </main>
+
+        <!--Start Footer-->
+        <footer class="footer nav">
+            <div class="center">
+                <h2 class="h1">Download for iOS/Android.</h2>
+                <button class="btn btn-default btn-lg">Download On The App Store</button>
+                <button class="btn btn-default btn-lg">Get It On Google Play</button>
+            </div>
+
+            <div class="middel1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h5><a href="#">About Us</a></h5>
+                            <p><a href="#">Careers</a></p>
+                            <p><a href="#">Brand Assets</a></p>
+                        </div>
+                        <div class="col-md-2">
+                            <h5><a href="#">Features</a></h5>
+                            <p><a href="#">Stores</a></p>
+                            <p><a href="#">Shopping</a></p>
+                            <p><a href="#">Massenger</a></p>
+                            <p><a href="#">Roles</a></p>
+                            <p><a href="#">Videos</a></p>
+                            <p><a href="#">Search & Explore</a></p>
+                        </div>
+                        <div class="col-md-2">
+                            <h5><a href="#">Community</a></h5>
+                            <p><a href="#">Shopping</a></p>
+                            <p><a href="#">Massenger</a></p>
+                            <p><a href="#">Programs</a></p>
+                        </div>
+                        <div class="col-md-2">
+                            <h5><a href="#">Business</a></h5>
+                            <p><a href="#">Shopping</a></p>
+                            <p><a href="#">Massenger</a></p>
+                            <p><a href="#">Programs</a></p>
+                        </div>
+                        <div class="col-md-3">
+                            <h5><a href="#">Safety</a></h5>
+                            <h5><a href="#">Creators</a></h5>
+                            <h5><a href="#">Bolgs</a></h5>
+                            <h5><a href="#">Help</a></h5>
+                            <p><a href="#">Instagram Engineering</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info">
+                <select name="Langauge">
+                    <option>Arabic</option>
+                    <option>English</option>
+                    <option>Franch</option>
+                    <option>Asbani</option>
+                </select>
+                <span>&copy;  2022 Instagram from Meta</span>
+            </div>
+        </footer>
+        <!--End Footer-->
+
+    </body>
+</html>

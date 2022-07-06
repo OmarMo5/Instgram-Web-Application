@@ -1,0 +1,78 @@
+﻿@{
+    ViewBag.Title = "LogIn";
+}
+
+<link href="~/Content/StyleLogin.css" rel="stylesheet" />
+
+<form method="post" action="/Home/LogIn" enctype="multipart/form-data">
+    <div class="row">
+        <div>
+            <h1>Instgram</h1>
+        </div>
+
+        <div class="col-sm-12">
+            <div class="col-sm-2">
+                <label class="col-sm-2 text-danger">UserName</label>
+            </div>
+
+            <div class="col-sm-10">
+                <input type="text" name="username" class="col-sm-6" required />
+            </div>
+        </div>
+
+        <div class="col-sm-12">
+            <div class="col-sm-2">
+                <label class="col-sm-2 text-danger">Password</label>
+            </div>
+
+            <div class="col-sm-10">
+                <input type="password" name="password" class="col-sm-8" required />
+            </div>
+        </div>
+
+        <div class="col-sm-12">
+            <div class="col-sm-2">
+                <label class="col-sm-2"></label>
+            </div>
+
+            <div class="col-sm-12">
+                <input type="submit" value="LogIn" class="btn btn-danger btn-block btn-lg" />
+            </div>
+        </div>
+
+        <div id="logIn1">
+            <p>_________________________ OR __________________________</p>
+            <div class="form-group">
+                <img src="~/images/face.JPEG" />
+                <span>Log in with Facebook</span>
+                <h4>Forgot Password ?</h4>
+            </div>
+        </div>
+    </div>
+    <h1>@ViewBag.Message</h1>
+</form>
+
+<div class="end">
+    <h4 style="text-align:center;">Don't have an account? <a href="/Home/Signup">Sign up</a></h4>
+    <div class="Row">
+        <a href="#">Meta</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Help</a>
+        <a href="#">Jobs</a>
+        <a href="#">ApI</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Location</a>
+        <a href="#">Instgram Lite</a>
+    </div>
+    <div class="info">
+        <select name="Langauge">
+            <option>Arabic</option>
+            <option>English</option>
+            <option>Franch</option>
+            <option>Asbani</option>
+        </select>
+        <span>&copy;  2022 Instagram from Meta</span>
+    </div>
+</div>
